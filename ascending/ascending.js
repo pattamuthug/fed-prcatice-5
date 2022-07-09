@@ -1,29 +1,28 @@
-console.log("descending order");
-var x = prompt("enter the number");
-var y = prompt("enter the number");
-var z = prompt("enter the number");
+var a = 4;
+var b = 3;
+var c = 2;
 
-if (x>y && x>z){
-    if(y>z){
-        console.log(x,y,z);
-    }
-    else{
-        console.log(x,z,y);
-    }
+let l;
+let m;
+let s;
+if(a>b && a>c){
+    l = a;
 }
-else if(y>x && y>z){
-    if(x>z){
-        console.log(y,x,z);
-    }
-    else{
-        console.log(y,z,x);
-    }
+else if (b>a && b>c){
+    l = b;
 }
-else if(z>x && z>y){
-    if(x>y){
-        console.log(z,x,y);
-    }
-    else{
-        console.log(z,y,x);
-    }
+else{
+    l = c;
 }
+if(a<b && a<c){
+    s = a;
+}
+else if(b<a && b<c){
+    s = b;
+}
+else{
+    s = c;
+}
+m = (a+b+c)-(l+s)
+console.log("ascending order:",s,m,l);
+console.log("descending order:",l,m,s);
